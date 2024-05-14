@@ -10,13 +10,16 @@
 (function() {
     'use strict';
 
-    // Example function
-    function sayHello(name) {
-        console.log(`Hello, ${name}!`);
+    function getToken() {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; WMS_TOKEN=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
     }
 
+    // вместо токена можно генерировать headers сразу
+
     // Export functions to window object
-    window.commonModule = {
-        sayHello: sayHello
+    window.wms = {
+        getToken: getToken
     };
 })();

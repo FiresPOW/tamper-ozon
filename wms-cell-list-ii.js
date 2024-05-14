@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         wms list ii 0.5
+// @name         wms list ii
 // @namespace    http://tampermonkey.net/
-// @version      2024-05-11
+// @version      0.5
 // @description  try to take over the world!
 // @author       You
 // @match        https://wms-frontend-reporting.wms.o3.ru/*/barcode-info/cell?barcode=*
